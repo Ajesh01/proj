@@ -1,0 +1,23 @@
+<form #dat = "ngForm" (ngSubmit) = "onClickSubmit(dat.value)" style="padding-top:50px;padding-left:200px;" >
+    <input  #urlform type = "text" name = "name" placeholder = "Name" ngModel>
+    <br>
+    <br>
+    <input type = "text" name = "gluc" placeholder = "Plasma Glucose Concentration" ngModel>
+    <br>
+    <br>
+    <input type = "text" name = "bp" placeholder = "Diastolic Blood Pressure" ngModel>
+    <br>
+    <br>
+    <input type = "text" name = "triceps" placeholder = "Triceps skin fold thickness" ngModel>
+    <br>
+    <br>
+    <input type = "text" name = "insulin" placeholder = "Serum Insulin" ngModel>
+    <br>
+    <br>
+    <input type = "text" name = "bmi" placeholder = "BMI" ngModel>
+    <br>
+  <br>
+    <input class="btn btn-warning" style="margin-top:20px; display:inline-block" type = "submit" value = "Upload">
+    <div id="save" style="display:inline-block"></div>
+  </form>
+  <h2>Results: </h2><div id="results"></div>
